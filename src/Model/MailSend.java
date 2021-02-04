@@ -21,8 +21,8 @@ import javax.mail.internet.MimeMessage;
 public class MailSend {
     
     private Properties props;
-    private final String PETDAYMAIL = "og2189@gmail.com";
-    private final String PASSWORD = "alejandro950109";
+    private final String PETDAYMAIL = "add email";   //Desde aqui se envia
+    private final String PASSWORD = "add Password";  // Por lo que es necesario autentificacion
     
     public boolean sendEmail(String receiver, String subject, String message) throws AddressException, MessagingException {
         try {
