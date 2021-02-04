@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.HomeOwnerController">
+   <children>
+      <Label fx:id="lbName" layoutX="25.0" layoutY="24.0" prefHeight="17.0" prefWidth="309.0" text="Name">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+      <Label fx:id="lbLastSeason" layoutX="356.0" layoutY="24.0" prefHeight="17.0" prefWidth="230.0" text="LasttSeason" textFill="#bc0303">
+         <font>
+            <Font name="System Italic" size="10.0" />
+         </font></Label>
+      <HBox layoutX="52.0" layoutY="60.0" prefHeight="312.0" prefWidth="497.0" spacing="30.0">
+         <children>
+            <VBox prefHeight="312.0" prefWidth="245.0" spacing="30.0">
+               <children>
+                  <Button fx:id="btnManagePets" mnemonicParsing="false" onAction="#actionManagePets" prefHeight="127.0" prefWidth="218.0" text="Button">
+                     <graphic>
+                        <Pane prefHeight="120.0" prefWidth="200.0">
+                           <children>
+                              <ImageView fx:id="imgManagePets" fitHeight="100.0" fitWidth="170.0" layoutX="16.0" layoutY="-1.0" pickOnBounds="true">
+                                 <image>
+                                    <Image url="@../Images/huella-icono-azul.png" />
+                                 </image>
+                              </ImageView>
+                              <Label layoutX="6.0" layoutY="98.0" prefHeight="17.0" prefWidth="196.0" text="                Manage Pets" textAlignment="CENTER" />
+                           </children>
+                        </Pane>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="btnManageRequest" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#actionManageRequests" prefHeight="127.0" prefWidth="218.0" text="Button">
+                     <graphic>
+                        <Pane prefHeight="120.0" prefWidth="200.0">
+                           <children>
+                              <ImageView fx:id="imgManageRequest" fitHeight="101.0" fitWidth="200.0" pickOnBounds="true">
+                                 <image>
+                                    <Image url="@../Images/request.png" />
+                                 </image>
+                              </ImageView>
+                              <Label layoutX="2.0" layoutY="98.0" prefHeight="17.0" prefWidth="196.0" text="                Manage Request" textAlignment="CENTER" />
+                           </children>
+                        </Pane>
+                     </graphic>
+                  </Button>
+               </children>
+            </VBox>
+            <VBox layoutX="10.0" layoutY="10.0" prefHeight="312.0" prefWidth="256.0" spacing="30.0">
+               <children>
+                  <Button fx:id="btnManageAccount" mnemonicParsing="false" onAction="#actionManageAccount" prefHeight="127.0" prefWidth="218.0" text="Button">
+                     <graphic>
+                        <Pane prefHeight="120.0" prefWidth="200.0">
+                           <children>
+                              <ImageView fx:id="imgManageAccount" fitHeight="103.0" fitWidth="200.0" pickOnBounds="true">
+                                 <image>
+                                    <Image url="@../Images/account.png" />
+                                 </image>
+                              </ImageView>
+                              <Label layoutX="2.0" layoutY="98.0" prefHeight="17.0" prefWidth="196.0" text="             Manage Account" textAlignment="CENTER" />
+                           </children>
+                        </Pane>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="btnLogOut" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#actionLogOut" prefHeight="127.0" prefWidth="218.0" text="Button">
+                     <graphic>
+                        <Pane prefHeight="120.0" prefWidth="200.0">
+                           <children>
+                              <ImageView fx:id="imgLogOut" fitHeight="104.0" fitWidth="200.0" pickOnBounds="true">
+                                 <image>
+                                    <Image url="@../Images/logout.png" />
+                                 </image>
+                              </ImageView>
+                              <Label layoutX="23.0" layoutY="98.0" prefHeight="17.0" prefWidth="196.0" text="                LogOut" textAlignment="CENTER" />
+                           </children>
+                        </Pane>
+                     </graphic>
+                  </Button>
+               </children>
+            </VBox>
+         </children>
+         <opaqueInsets>
+            <Insets bottom="15.0" left="15.0" right="15.0" top="30.0" />
+         </opaqueInsets>
+         <padding>
+            <Insets bottom="5.0" left="15.0" right="5.0" top="10.0" />
+         </padding>
+      </HBox>
+   </children>
+</AnchorPane>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+
+<AnchorPane id="AnchorPane" prefHeight="517.0" prefWidth="739.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.RequestTotalController">
+   <children>
+      <Label layoutX="24.0" layoutY="24.0" prefHeight="17.0" prefWidth="261.0" text="Request that have been made by other users" />
+      <Pane layoutX="585.0" layoutY="198.0" prefHeight="121.0" prefWidth="136.0">
+         <children>
+            <ImageView fx:id="imgPicturePet" fitHeight="121.0" fitWidth="129.0" layoutX="4.0" pickOnBounds="true" preserveRatio="true" />
+         </children>
+      </Pane>
+      <Label layoutX="480.0" layoutY="331.0" prefHeight="24.0" prefWidth="105.0" text="Pet Description" />
+      <TextArea fx:id="txfPetDescription" editable="false" layoutX="480.0" layoutY="366.0" prefHeight="80.0" prefWidth="200.0" text="No request have been made,&#10;please any request." />
+      <Button fx:id="btnAcceptRequest" disable="true" layoutX="532.0" layoutY="457.0" mnemonicParsing="false" onAction="#actionAcceptRequest" text="Accept request" />
+      <Label layoutX="497.0" layoutY="250.0" text="Pet Name" />
+      <Label fx:id="lbPetName" layoutX="492.0" layoutY="276.0" prefHeight="17.0" prefWidth="62.0" />
+      <Label layoutX="464.0" layoutY="76.0" text="Owner Name" />
+      <Label fx:id="lbOwnerName" layoutX="555.0" layoutY="76.0" prefHeight="17.0" prefWidth="129.0" text="Select any request" />
+      <Label layoutX="459.0" layoutY="114.0" text="Owner Address" />
+      <Label fx:id="lbOwnerAddress" layoutX="550.0" layoutY="114.0" prefHeight="17.0" prefWidth="160.0" text="Select any request" />
+      <TableView fx:id="tbvRequests" layoutX="24.0" layoutY="59.0" onMouseClicked="#actionClickOnRow" prefHeight="398.0" prefWidth="391.0">
+        <columns>
+          <TableColumn fx:id="colStartDate" prefWidth="196.0" text="Start Date" />
+          <TableColumn fx:id="ColFinishDate" minWidth="9.0" prefWidth="194.0" text="Finish Date" />
+            <TableColumn fx:id="ColIdPet" minWidth="9.0" prefWidth="194.0" text="idPet" visible="false" />
+            <TableColumn fx:id="ColidOwner" minWidth="9.0" prefWidth="194.0" text="IdOwner" visible="false" />
+            <TableColumn fx:id="ColIdRequest" minWidth="9.0" prefWidth="194.0" text="idRequest" visible="false" />
+        </columns>
+      </TableView>
+      <Label fx:id="lbPetSex" layoutX="630.0" layoutY="335.0" text="Select pet" />
+   </children>
+</AnchorPane>
