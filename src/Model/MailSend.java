@@ -28,7 +28,6 @@ public class MailSend {
             props.setProperty("mail.smtp.port", "587");              // Puerto a uilizar para para el smtp -- Es el predeterminado
             props.setProperty("mail.smtp.auth", "true");             // Propiedad en donde se dice que es necesaria la autentificación para aceder al servicio
 
-            System.out.println("llega hasta aqui");
             Session session = Session.getInstance(props);            // Preparar la sesion
             
             //Message mes = prepareMessage(session);
