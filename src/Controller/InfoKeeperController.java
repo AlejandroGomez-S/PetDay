@@ -1,8 +1,4 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package Controller;
 
 import Model.DaoKeeper;
@@ -23,7 +19,7 @@ import javafx.stage.Stage;
 /**
  * FXML Controller class
  *
- * @author og218
+ * @author Oscar Alejandro Gómez Suarez
  */
 public class InfoKeeperController implements Initializable {
 
