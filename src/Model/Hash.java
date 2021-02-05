@@ -3,7 +3,7 @@ package Model;
 
 /**
  *
- * @author Oscar Alejandro Gómez Suarez
+ * @author Recuperado internet
  */
 public class Hash {
     public static String getHash(String txt, String hashType) {

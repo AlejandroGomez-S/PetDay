@@ -73,7 +73,7 @@ public class LoginController implements Initializable {
         //Es la parte del selector 
         if(rbOwner.isSelected()){
             paneLogin.setVisible(true);
-            paneLogin.setStyle("-fx-background-color: rgba(247,49,99,0.50)");
+            paneLogin.setStyle("-fx-background-color: rgba(247,49,99,0.22)");
         }
     }
 
@@ -173,14 +173,14 @@ public class LoginController implements Initializable {
 
     @FXML
     private void actionRbOwner(ActionEvent event) throws AddressException, MessagingException {
-        paneLogin.setStyle("-fx-background-color: rgba(247,49,99,0.50)");
+        paneLogin.setStyle("-fx-background-color: rgba(247,49,99,0.22)");
         rbKeeper.setSelected(false);
         rbOwner.setSelected(true);
     }
 
     @FXML
     private void actionRdKeeper(ActionEvent event) {
-        paneLogin.setStyle("-fx-background-color: rgba(9,126,217,0.55)");
+        paneLogin.setStyle("-fx-background-color: rgba(9,126,217,0.22)");
         rbOwner.setSelected(false);
         rbKeeper.setSelected(true);
     }

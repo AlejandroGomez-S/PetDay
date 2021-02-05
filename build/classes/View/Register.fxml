@@ -5,10 +5,10 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane id="AnchorPane" prefHeight="497.0" prefWidth="661.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.RegisterController">
+<AnchorPane id="AnchorPane" prefHeight="497.0" prefWidth="661.0" styleClass="background" stylesheets="@GlobalStyle.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.RegisterController">
    <children>
       <Label layoutX="467.0" layoutY="42.0" text="What do you want to be" />
-      <AnchorPane fx:id="anchorRegisterZone" layoutX="27.0" layoutY="10.0" prefHeight="476.0" prefWidth="417.0" visible="false" />
+      <AnchorPane fx:id="anchorRegisterZone" layoutX="27.0" layoutY="10.0" prefHeight="476.0" prefWidth="417.0" styleClass="anchor-pane" visible="false" />
       <ChoiceBox fx:id="chRole" layoutX="456.0" layoutY="86.0" prefWidth="150.0" />
       <Button fx:id="btnRegister" disable="true" layoutX="501.0" layoutY="129.0" mnemonicParsing="false" onAction="#actionRegister" text="Register" />
       <Button fx:id="btnClear" disable="true" layoutX="510.0" layoutY="176.0" mnemonicParsing="false" onAction="#actionClear" text="Clear" />

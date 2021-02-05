@@ -13,7 +13,7 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.layout.VBox?>
 
-<AnchorPane id="AnchorPane" prefHeight="470.0" prefWidth="415.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.RegisterKeeperController">
+<AnchorPane id="AnchorPane" prefHeight="470.0" prefWidth="415.0" style="-fx-background-color: rgba(9,126,217,0.22);" stylesheets="@GlobalStyle.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.RegisterKeeperController">
    <children>
       <VBox layoutX="20.0" layoutY="20.0" prefHeight="382.0" prefWidth="242.0" spacing="3.0">
          <children>

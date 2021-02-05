@@ -13,13 +13,23 @@
     -fx-border-style: hidden hidden solid hidden;
     -fx-background-color: transparent;
     
-}
-
-.label{
-   
-}
-
-.paneData{
-  
     
+}
+
+.button{
+    -fx-background-radius: 3,2,1;
+    -fx-background-insets: 4,2,1;
+    -fx-background-color: #9642bd,
+        linear-gradient(#ffeaa7 0%, #d9f0fc 49%, #d89af5 50%, #a7d9f5 100%);
+    -fx-background-insets: 0,1,2;
+    -fx-font-size: 15px;
+    
+}
+
+.pane{
+    -fx-background-radius: 35 35 35,35;
+}
+
+.anchor-pane{
+    -fx-background-radius: 35 35 35,35;
 }
