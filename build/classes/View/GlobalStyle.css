@@ -6,24 +6,20 @@
 
 .background {
     -fx-background-color: linear-gradient(from 50% 50% to 100% 100%, rgba(219,105,99,0.46), #6c5ce7);
-
 }
 
 .text-field{
     -fx-border-style: hidden hidden solid hidden;
     -fx-background-color: transparent;
-    
-    
 }
 
 .button{
     -fx-background-radius: 3,2,1;
     -fx-background-insets: 4,2,1;
-    -fx-background-color: #9642bd,
-        linear-gradient(#ffeaa7 0%, #d9f0fc 49%, #d89af5 50%, #a7d9f5 100%);
+    -fx-background-color: #9642bd, linear-gradient(#ffeaa7 0%, #d9f0fc 49%, #d89af5 50%, #a7d9f5 100%);
     -fx-background-insets: 0,1,2;
     -fx-font-size: 15px;
-    
+    -fx-cursor: hand;
 }
 
 .pane{
@@ -31,5 +27,23 @@
 }
 
 .anchor-pane{
-    -fx-background-radius: 35 35 35,35;
+    -fx-background-radius: 35 35 35,35;   
+}
+
+.text-area{
+    -fx-highlight-fill: #00ff00;
+    -fx-highlight-text-fill: #000000;
+    -fx-border-color: transparent;
+}
+
+.text-area .content{
+    -fx-background-color: #ff88cd;
+}
+
+.choice-box{
+    -fx-background-color: #9642bd, rgba(255, 255, 255, 1) 0% ,linear-gradient(rgba(192, 154, 239, 0.61) 50%, #d9f0fc 49%, #d89af5 50%, #a7d9f5 100%);
+}
+
+.choice-box:focused{
+    -fx-background-color: #9642bd, rgba(255, 255, 255, 1) 0% ,linear-gradient(rgba(192, 154, 239, 0.61) 50%, #d9f0fc 49%, #d89af5 50%, #a7d9f5 100%);
 }

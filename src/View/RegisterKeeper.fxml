@@ -15,11 +15,11 @@
 
 <AnchorPane id="AnchorPane" prefHeight="470.0" prefWidth="415.0" style="-fx-background-color: rgba(9,126,217,0.22);" stylesheets="@GlobalStyle.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.RegisterKeeperController">
    <children>
-      <VBox layoutX="20.0" layoutY="20.0" prefHeight="382.0" prefWidth="242.0" spacing="3.0">
+      <VBox layoutX="22.0" layoutY="14.0" prefHeight="382.0" prefWidth="242.0" spacing="3.0">
          <children>
             <HBox prefHeight="28.0" prefWidth="179.0" spacing="10.0">
                <children>
-                  <Label prefHeight="28.0" prefWidth="117.0" text="Name" />
+                  <Label prefHeight="28.0" prefWidth="112.0" text="Name" />
                   <TextField fx:id="txfName" onKeyTyped="#actionNameTyped" prefHeight="24.0" prefWidth="155.0" style="-fx-border-color: #eb4d4b;">
                      <HBox.margin>
                         <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
@@ -159,8 +159,8 @@
             <ImageView fx:id="imgPhoto" fitHeight="131.0" fitWidth="129.0" layoutX="3.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true" />
          </children>
       </Pane>
-      <Button fx:id="btnUpload" layoutX="31.0" layoutY="408.0" mnemonicParsing="false" onAction="#actionUpload" text="Upload Photo" />
-      <Label fx:id="lbPath" layoutX="31.0" layoutY="439.0" prefHeight="17.0" prefWidth="354.0" text="Nothing has been selected" />
+      <Button fx:id="btnUpload" layoutX="31.0" layoutY="415.0" mnemonicParsing="false" onAction="#actionUpload" text="Upload Photo" />
+      <Label fx:id="lbPath" layoutX="31.0" layoutY="446.0" prefHeight="17.0" prefWidth="354.0" text="Nothing has been selected" />
       <Label fx:id="lbDescriptionInfo" layoutX="273.0" layoutY="228.0" prefHeight="139.0" prefWidth="133.0" textFill="#ff001a" />
    </children>
 </AnchorPane>

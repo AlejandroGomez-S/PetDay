@@ -19,6 +19,7 @@ import javafx.scene.control.ChoiceBox;
 import javafx.scene.input.ContextMenuEvent;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
+import javafx.scene.layout.Pane;
 import javafx.stage.Stage;
 import javafx.stage.Window;
 
@@ -45,6 +46,8 @@ public class RegisterController implements Initializable {
     
     // Para mantener el choice Picker
     private ObservableList<String> roles =  FXCollections.observableArrayList("Owner", "Keeper");
+    @FXML
+    private Pane panetoHide;
 
     /**
      * Initializes the controller class.
@@ -52,9 +55,10 @@ public class RegisterController implements Initializable {
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
-        chRole.setValue("Select the Role you Want to be Register");
+        chRole.setValue("Select the Role");
         chRole.setItems(roles);
         chRole.setOnAction((event) -> {
+            panetoHide.setVisible(false);
             String selection = (String) chRole.getValue();
             if(selection.equals("Owner")){
                 // Se asigna el fxml a la variable de la clase para obtener acceso al controlador
@@ -76,7 +80,7 @@ public class RegisterController implements Initializable {
         Window owner = btnBack.getScene().getWindow();
         
         if(chRole.getValue().equals("Owner")){
-            RegisterOwnerController ownerController = registrerOwnerContrl.getController(); 
+            RegisterOwnerController ownerController = registrerOwnerContrl.getController();
             if(ownerController.registerOwner()){
                 showAlert(Alert.AlertType.INFORMATION,owner , "Registro Exitoso" ,"Correcto" , "Succes");
                 goBack();
