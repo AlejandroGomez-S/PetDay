@@ -23,11 +23,11 @@
 }
 
 .pane{
-    -fx-background-radius: 35 35 35,35;
+    -fx-background-radius: 35 35 35 35;
 }
 
 .anchor-pane{
-    -fx-background-radius: 35 35 35,35;   
+    -fx-background-radius: 35 35 35 35;   
 }
 
 .text-area{

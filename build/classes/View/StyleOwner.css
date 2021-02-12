@@ -1,0 +1,70 @@
+
+/* 
+    Created on : 12 feb. 2021, 3:45:09 p. m.
+    Author     : Oscar Alejandro Gómez Suarez
+*/
+
+.anchor-pane{
+    -fx-background-color: linear-gradient(from 50% 50% to 100% 100%, rgba(231, 70, 118, 0.53), rgba(132, 27, 177, 0.64));
+}
+
+.button{
+    -fx-background-radius: 3,2,1;
+    -fx-background-insets: 4,2,1;
+    -fx-border-color: black;
+    -fx-background-color:linear-gradient(#7ed6df 0%, #686de0 92%);
+    -fx-background-insets: 0,1,2;
+    -fx-font-size: 15px;
+    -fx-cursor: hand;
+}
+
+.button-out{
+    -fx-background-radius: 4,5,2;
+    -fx-background-insets: 4,2,1;
+    -fx-border-color: black;
+    -fx-background-color:linear-gradient(#ff7979 0%, rgba(240, 0, 0, 1) 100%);
+    -fx-background-insets: 0,1,2;
+    -fx-font-size: 15px;
+    -fx-cursor: hand;
+}
+
+.button-Con{
+    -fx-font-size: 13px;  
+}
+
+#goprincipal{
+    -fx-font-size: 13px;  
+}
+
+.table-view{
+    -fx-background-color: transparent;
+}
+
+.table-view .column-header{
+    -fx-background-color: linear-gradient(to bottom, rgba(132, 27, 177, 0.65), rgba(209, 10, 170, 0.64));
+}
+
+/*Primero es necesario que sea de color transparente */
+.table-view .table-cell{
+    -fx-border-color: transparent;
+    -fx-padding: 2 0 2 10px;
+}
+
+/*Hover solo funciona si se pone solo un doble punto */
+.table-row-cell:hover {
+    -fx-background-color: #93f9b911;
+    -fx-text-background-color: #130f40;
+    -fx-border-color: #eb4d4b;
+}
+
+/* Para que una celda sea de un color y la otra de otro color*/
+.table-row-cell:odd{
+    -fx-background-color: #93f9b911;
+    -fx-background-insets: 0, 0 0 1 0;
+    -fx-padding: 0.0em;
+}
+.table-row-cell:even{
+    -fx-background-color: #1dbbdd11;
+    -fx-background-insets: 0, 0 0 1 0;
+    -fx-padding: 0.0em;
+}
