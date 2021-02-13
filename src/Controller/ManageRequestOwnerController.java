@@ -149,7 +149,7 @@ public class ManageRequestOwnerController implements Initializable {
                 daoKeeper = new DaoKeeper();
                 this.nameKeeper = new SimpleStringProperty(daoKeeper.getKeeperName(this.idkeeper.get()));
             }else{
-                this.nameKeeper = new SimpleStringProperty("Not Acepted");
+                this.nameKeeper = new SimpleStringProperty("Not Accepted");
             }
         }
 

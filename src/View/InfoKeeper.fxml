@@ -11,8 +11,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-
-<AnchorPane id="AnchorPane" prefHeight="574.0" prefWidth="444.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/11.0.1" fx:controller="Controller.InfoKeeperController">
+<AnchorPane id="AnchorPane" prefHeight="574.0" prefWidth="444.0" styleClass="anchor-pane" stylesheets="@StyleOwner.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.InfoKeeperController">
    <children>
       <VBox layoutX="67.0" layoutY="230.0" prefHeight="277.0" prefWidth="329.0">
          <children>

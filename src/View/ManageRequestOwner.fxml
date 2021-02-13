@@ -7,12 +7,14 @@
 <?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.control.TableView?>
 <?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane id="AnchorPane" prefHeight="575.0" prefWidth="831.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.ManageRequestOwnerController">
+<AnchorPane id="AnchorPane" prefHeight="575.0" prefWidth="831.0" styleClass="anchor-pane" stylesheets="@StyleOwner.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.ManageRequestOwnerController">
    <children>
       <TableView fx:id="tbvRequests" layoutX="66.0" layoutY="79.0" onMouseClicked="#actionClickOnRow" prefHeight="282.0" prefWidth="469.0">
         <columns>
@@ -26,14 +28,10 @@
         </columns>
       </TableView>
       <Label layoutX="30.0" layoutY="29.0" prefHeight="17.0" prefWidth="158.0" text="The request you have made" />
-      <Button fx:id="btnDelete" disable="true" layoutX="676.0" layoutY="93.0" mnemonicParsing="false" onAction="#actionDelete" text="Delete" />
-      <Button fx:id="btnShowInformation" disable="true" layoutX="627.0" layoutY="157.0" mnemonicParsing="false" onAction="#actionShowInformation" text="Show information Keeper" />
-      <Button fx:id="btnDeclineService" disable="true" layoutX="655.0" layoutY="208.0" mnemonicParsing="false" onAction="#actionDeclineService" text="Decline Service" />
-      <Button fx:id="btnCreateRequest" layoutX="642.0" layoutY="254.0" mnemonicParsing="false" onAction="#actionCreateRequest" text="Create new Request" />
       <Pane fx:id="paneAdd" disable="true" layoutX="19.0" layoutY="382.0" prefHeight="179.0" prefWidth="798.0">
          <children>
-            <Button layoutX="684.0" layoutY="26.0" mnemonicParsing="false" onAction="#actionAddRequest" text="Add Request" />
-            <Button fx:id="btnClear" layoutX="700.0" layoutY="96.0" mnemonicParsing="false" onAction="#actionClear" text="Clear" />
+            <Button layoutX="674.0" layoutY="22.0" mnemonicParsing="false" onAction="#actionAddRequest" styleClass="button-Con" text="Add Request" />
+            <Button fx:id="btnClear" layoutX="696.0" layoutY="94.0" mnemonicParsing="false" onAction="#actionClear" styleClass="button-Con" text="Clear" />
             <DatePicker fx:id="dpInicialization" layoutX="77.0" layoutY="55.0" onMouseClicked="#actionPickDateIni" />
             <Label layoutX="77.0" layoutY="30.0" text="Date Inicialization" />
             <Label layoutX="77.0" layoutY="88.0" text="Time Inicialization" />
@@ -70,6 +68,26 @@
             </Label>
          </children>
       </Pane>
-      <Button fx:id="btnGotoPrincipal" layoutX="657.0" layoutY="324.0" mnemonicParsing="false" onAction="#actionClickRrincipal" text="Go to princpal" />
+      <VBox layoutX="600.0" layoutY="79.0" prefHeight="273.0" prefWidth="176.0" spacing="25.0">
+         <children>
+            <Button fx:id="btnGotoPrincipal" mnemonicParsing="false" onAction="#actionClickRrincipal" prefHeight="33.0" prefWidth="223.0" styleClass="button-Con" text="Go to princpal">
+               <graphic>
+                  <Pane prefHeight="21.0" prefWidth="24.0">
+                     <children>
+                        <ImageView fitHeight="18.0" fitWidth="18.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Images/arrow-back-icon.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </Pane>
+               </graphic>
+            </Button>
+            <Button fx:id="btnShowInformation" disable="true" mnemonicParsing="false" onAction="#actionShowInformation" prefHeight="33.0" prefWidth="225.0" styleClass="button-Con" text="Show Keeper's info" />
+            <Button fx:id="btnDeclineService" disable="true" mnemonicParsing="false" onAction="#actionDeclineService" prefHeight="33.0" prefWidth="223.0" styleClass="button-out" text="Decline Service" />
+            <Button fx:id="btnDelete" disable="true" mnemonicParsing="false" onAction="#actionDelete" prefHeight="33.0" prefWidth="219.0" styleClass="button-out" text="Delete" />
+            <Button fx:id="btnCreateRequest" mnemonicParsing="false" onAction="#actionCreateRequest" prefHeight="33.0" prefWidth="216.0" styleClass="button-Con" text="Create new Request" />
+         </children>
+      </VBox>
    </children>
 </AnchorPane>
