@@ -18,6 +18,7 @@ import javafx.scene.image.ImageView;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.Pane;
 import javafx.stage.Stage;
+import javax.swing.text.html.CSS;
 
 /**
  * FXML Controller class
@@ -41,6 +42,10 @@ public class HomeKeeperController implements Initializable {
     private Pane paneRequests;
     
     private FXMLLoader fxmlLoaderPanes;
+    @FXML
+    private Button btnRequests;
+    @FXML
+    private Button btnAcceptedRequests;
 
     /**
      * Initializes the controller class.
@@ -61,6 +66,7 @@ public class HomeKeeperController implements Initializable {
             System.out.println("Problem load the picture");
         }
         loadAndPlaceFXMLTotalRequest();
+        btnRequests.setStyle("-fx-background-color: rgba(113, 123, 183, 0.71)");
     }
 
     @FXML
@@ -78,11 +84,15 @@ public class HomeKeeperController implements Initializable {
      @FXML
     private void actionClickTotal(ActionEvent event) {
         loadAndPlaceFXMLTotalRequest();
+        btnRequests.setStyle("-fx-background-color: rgba(113, 123, 183, 0.71)");
+        btnAcceptedRequests.setStyle("-fx-background-color: transparent");
     }
 
     @FXML
     private void actionClickAccepted(ActionEvent event) {
         loadAndPlaceFXMLAcceptedRequest();
+        btnRequests.setStyle("-fx-background-color: transparent");
+        btnAcceptedRequests.setStyle("-fx-background-color: rgba(113, 123, 183, 0.71)");
     }
 
     private void loadAndPlaceFXMLTotalRequest() {

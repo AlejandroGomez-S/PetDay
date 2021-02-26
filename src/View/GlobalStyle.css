@@ -5,7 +5,7 @@
 */
 
 .background {
-    -fx-background-color: linear-gradient(from 50% 50% to 100% 100%, rgba(219,105,99,0.46), #6c5ce7);
+    -fx-background-color: linear-gradient(from 50% 50% to 100% 100%, rgba(219,105,99,0.20), rgba(103, 86, 230, 0.71));
 }
 
 .text-field{

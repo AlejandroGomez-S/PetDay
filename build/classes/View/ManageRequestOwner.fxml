@@ -30,8 +30,8 @@
       <Label layoutX="30.0" layoutY="29.0" prefHeight="17.0" prefWidth="158.0" text="The request you have made" />
       <Pane fx:id="paneAdd" disable="true" layoutX="19.0" layoutY="382.0" prefHeight="179.0" prefWidth="798.0">
          <children>
-            <Button layoutX="674.0" layoutY="22.0" mnemonicParsing="false" onAction="#actionAddRequest" styleClass="button-Con" text="Add Request" />
-            <Button fx:id="btnClear" layoutX="696.0" layoutY="94.0" mnemonicParsing="false" onAction="#actionClear" styleClass="button-Con" text="Clear" />
+            <Button layoutX="675.0" layoutY="82.0" mnemonicParsing="false" onAction="#actionAddRequest" styleClass="button-Con" text="Add Request" />
+            <Button fx:id="btnClear" layoutX="697.0" layoutY="24.0" mnemonicParsing="false" onAction="#actionClear" styleClass="button-Con" text="Clear" />
             <DatePicker fx:id="dpInicialization" layoutX="77.0" layoutY="55.0" onMouseClicked="#actionPickDateIni" />
             <Label layoutX="77.0" layoutY="30.0" text="Date Inicialization" />
             <Label layoutX="77.0" layoutY="88.0" text="Time Inicialization" />
